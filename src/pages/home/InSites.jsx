@@ -300,49 +300,49 @@ const Sts = () => {
   return (
     <div className="ecommerce-sites">
       <div className="filters">
-      <div className="search-d">
+        <div className="search-d">
           <SearchIcon />
-        <input
-          className="search-p"
-          type="text"
-          placeholder="Search by site name"
-          onChange={handleSearch}
-          value={searchQuery}
+          <input
+            className="search-p"
+            type="text"
+            placeholder="Search by site name"
+            onChange={handleSearch}
+            value={searchQuery}
           />
         </div>
         <div className="f-1">
-          <label>Category
-          <select className="select-s" onChange={handleCategoryChange} value={selectedCategory}>
+          <label>Category </label>
+          <select
+            className="select-s"
+            onChange={handleCategoryChange}
+            value={selectedCategory}
+          >
             {availableCategories.map((category) => (
               <option key={category} value={category}>
                 {category}
               </option>
             ))}
           </select>
-          </label>
         </div>
         <div className="f-1">
-        <label>
-          Offers
-          <select className="select-s" onChange={handleOfferChange} value={selectedOffer}>
+          <label>Offers </label>
+          <select
+            className="select-s"
+            onChange={handleOfferChange}
+            value={selectedOffer}
+          >
             {availableOffers.map((offer) => (
               <option key={offer} value={offer}>
                 {offer}
               </option>
             ))}
           </select>
-        </label>
         </div>
       </div>
-     <div className="content">
-      <Link to="/disp-plan">
-     <img src="/banner/banner.png" alt="no img"/>
-     </Link>
-     </div> 
-     <div className="content2">
-     <img src="/banner/Coupon.png" height={80} alt="no img"/>
-     </div> 
-     {/* <div className="content">
+      <Link to="/disp-plan" className="content1"></Link>
+
+      <div className="content2"></div>
+      {/* <div className="content">
      <img src="/banner/banner2.png" alt="no img"/>
      </div>  */}
 
@@ -351,8 +351,7 @@ const Sts = () => {
           <div key={site.id} className="site">
             <a href={site.link} target="_blank" rel="noopener noreferrer">
               <img className="s-img" src={site.logo} alt={site.name} />
-            </a> 
-
+            </a>
           </div>
         ))}
       </div>

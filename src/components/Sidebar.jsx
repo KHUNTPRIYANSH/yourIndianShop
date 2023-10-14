@@ -51,7 +51,7 @@ const Sidebar = () => {
             <span className="sidebar_nav_txt">
               <div className="logo">
                 <span id="org">Your</span>
-                <img src="../imgs/6.png" height="40px" alt="" />
+                <img src="../imgs/6.png" style={{ width: "40px" }} />
                 <span className="">Shop</span>
               </div>
             </span>
